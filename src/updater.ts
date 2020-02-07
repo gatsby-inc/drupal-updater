@@ -37,12 +37,13 @@ const patchArticle = async (
   const body = await response.json();
   console.log({
     body,
+    data: body.data,
     st: response.status
   });
 };
 
 const getFirstArticle = async (server: string) => {
-  const url = `https://${server}/jsonapi/node/article?page[limit]=1&sort=-created`;
+  const url = `https://${server}/jsonapi/node/article?page[limit]=1&sort=created`;
   const response = await fetch(url);
   const body = await response.json();
   return body.data[0];
