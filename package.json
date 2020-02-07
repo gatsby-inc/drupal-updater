@@ -1,0 +1,22 @@
+{
+  "name": "update-drupal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": "dist/cli.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@itsfadnis/jsonapi-client": "^2.1.1",
+    "@types/node": "^13.7.0",
+    "@types/yargs": "^15.0.3",
+    "typescript": "^3.7.5"
+  },
+  "author": "<matt@gatsbyjs.com>",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "yargs": "^15.1.0"
+  }
+}
