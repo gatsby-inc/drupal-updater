@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-import {argv} from "yargs"
-import dotenv from "dotenv"
+// import { argv } from "yargs";
+import dotenv from "dotenv";
+import { update } from "./updater";
 
-dotenv.config()
+dotenv.config();
 
-const username = process.env.GATSBY_DRUPAL_USERNAME
-const password = process.env.GATSBY_DRUPAL_PASSWORD
-const server = process.env.GATSBY_DRUPAL_SERVER
+const username = process.env.GATSBY_DRUPAL_USERNAME;
+const password = process.env.GATSBY_DRUPAL_PASSWORD;
+const server = process.env.GATSBY_DRUPAL_SERVER;
 
-console.log(JSON.stringify(argv))
+update(username, password, server);

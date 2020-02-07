@@ -6,17 +6,20 @@
   "bin": "dist/cli.js",
   "scripts": {
     "watch": "tsc --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node ./dist/cli.js"
   },
   "devDependencies": {
     "@itsfadnis/jsonapi-client": "^2.1.1",
     "@types/node": "^13.7.0",
+    "@types/node-fetch": "^2.5.4",
     "@types/yargs": "^15.0.3",
     "typescript": "^3.7.5"
   },
   "author": "<matt@gatsbyjs.com>",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.0",
     "yargs": "^15.1.0"
   }
 }
